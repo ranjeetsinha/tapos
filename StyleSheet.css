@@ -1,0 +1,307 @@
+﻿
+
+@page {
+  margin:0 15px;
+  visibility:hidden
+}
+
+@media screen {
+ #customer-receipt {
+  margin: 20px auto;
+  width: 260px;
+ }
+ #receipt-header img {
+  width: 260px;
+ }
+}
+
+#receipt-header img {
+ width: 100%;
+}
+
+#receipt {
+ background-color: #fff;
+ margin: 0;
+ width: 100%;
+ margin: 0;
+ padding: 0;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+ }
+
+table {
+ 
+ border-collapse: collapse;
+}
+#receipt h1 {
+ clear: both;
+ margin: 20px 0;
+ font-size: 1.3em;
+ color: #000;
+}
+
+#receipt h2 {
+ background: none;
+ clear: both;
+ margin: 10px 0;
+ color: #000;
+ font-size: 1em;
+}
+
+#receipt h3 {
+ background: none;
+ clear: both;
+ margin: 10px 0;
+ color: #000;
+ font-size: 0.9em;
+}
+
+body#register #receipt {
+ display: block;
+}
+
+#receipt-supplier {
+ display: none;
+}
+
+#receipt-content {
+ margin: 20px 0;
+}
+
+#receipt-footer {
+ margin: 20px 0;
+ padding: 20px 0 0;
+ border-top: 2px dashed #333;
+ clear: both;
+}
+
+#powered_by {
+ font-size: 0.7em;
+}
+
+#receipt-header {
+ margin: 5px 0 10px;
+ padding: 0 0 10px;
+ border-bottom: 2px dashed #333;
+ clear: both;
+ text-align: center;
+}
+
+#receipt-meta {
+ clear: both;
+  font-size: 0.85em;
+  
+}
+
+#receipt-meta span {
+ display: block;
+ width: 100%;
+ float: left;
+ margin: 2px 0;
+}
+
+#receipt-meta span.served-by {
+}
+
+
+#receipt-content #table-sale-totals,
+#receipt-content #table-payment-totals {
+ width: 100%;
+ margin: 0;
+}
+
+#receipt-content #table-payment-totals td.payment-input {
+ width: 0;
+}
+
+#receipt-content table#table_sale_items {
+ border-bottom: none;
+}
+
+
+#receipt table#table-sale-totals,
+#receipt table#table-payment-totals {
+ font-size: .8em;
+ color: #000;
+ width: 80%;
+ margin: 0;
+ 
+}
+#receipt-content table#table_sale_items
+ {
+ font-size: .8em !important;
+ 
+ }
+
+#receipt-content table.item_list th,
+ #receipt table.item_list td
+
+ {
+ border-bottom: 1px solid #000;
+ padding: 3px 2px;
+}
+ #receipt table#table-sale-totals td,
+ #receipt table#table-sale-totals th,
+  #receipt table#table-payment-totals td,
+ #receipt table#table-payment-totals th{
+ border-top: none;
+ border-bottom: 1px solid #000;
+ }
+
+table#table_sale_items td, table#table_sale_items th {
+ padding: 3px 1px;
+ 
+ }
+ 
+#receipt tr.sub-total td {
+ border-top: 1px solid #000;
+}
+
+#receipt-content table#table_sale_items td.quantity 
+ {
+ padding-left: 0px;
+ width: 10px;
+ font-weight: normal;
+ 
+ }
+ #receipt-content table#table_sale_items td.price 
+ {
+ padding-right: 5px;
+ font-weight: normal;
+ 
+ }
+  table#table_sale_items td.name,
+ table#table_sale_items td.quantity a, 
+ table#table_sale_items td.price a,
+ table#table_sale_items td.price-total {
+font-size: 10px;
+font-weight: normal;
+}
+ 
+#signature-box { border: 0.1em solid #000; height: 6em; margin: 1em;
+                 -webkit-border-radius: 2em; -moz-border-radius: 2em; border-radius: 2em; }
+                 
+                 
+                
+
+#footer {
+ clear: both;
+}
+
+.action {
+ display: none;
+}
+
+.noprint {
+ display: none;
+}
+
+#sfWebDebug {
+ display: none;
+}
+
+body#register #top-nav,
+ body#register #footer,
+ body#register #container,
+ body#barcodes #top-nav,
+ #footer,
+ #nav,
+ #breadcrumbs,
+ div#heading
+{
+ display: none;
+}
+
+div#heading .inner,
+ div#main-body .content-inner {
+padding: 0 0;
+margin: 0 0;
+}
+
+
+div#banner .inner,div#top-nav .inner,body,div#container,.scroll-horizontal,div#main-body
+ {
+ width: 100%;
+ border: none;
+ overflow: visible;
+ margin: 0px;
+ display: block;
+ -webkit-box-shadow: none;
+ -moz-box-shadow: none;
+ box-shadow: none;
+ -moz-border-radius: none;
+ -o-border-radius: none;
+ -icab-border-radius: none;
+ -khtml-border-radius: none;
+ -webkit-border-radius: none;
+ border-radius: none;
+}
+
+body#barcodes div#container {
+ width: auto;
+}
+
+#sales_items_container {
+ height: auto;
+ border: none;
+}
+
+body#register #customer-receipt #receipt {
+ display: block;
+}
+
+body#register {
+ height: auto;
+}
+
+#receipt {
+ width: 100%;
+ display: block;
+ position: absolute;
+ top: 0;
+ left: 0;
+}
+
+#receipt-content td,#receipt-content th {
+ padding: 4px 2px;
+}
+
+table#table_sale_items td,table#table_sale_items th {
+ border-bottom: 1px solid #000;
+}
+
+table#table_sale_items {
+ border-top: none;
+ border-bottom: none;
+}
+
+table#table_sale_items td.quantity {
+ width: 30px;
+}
+
+table#table_sale_items td.name {
+ white-space: wrap;
+ max-width: none;
+}
+
+#table_sale_items .price a,#table_sale_items .quantity a {
+ color: #000;
+ text-shadow: none;
+ background-color: #fff;
+ padding: 0 2px;
+ font-size: 1em;
+}
+div.controls ul li a,#table_sale_items .price a,#table_sale_items .quantity a,div.controls ul li a.delete,div#top-nav li.status a
+{
+ border: none;
+}
+
+.ui-tooltip-wrapper,.ui-tooltip-tip {
+ display: none;
+}
+
